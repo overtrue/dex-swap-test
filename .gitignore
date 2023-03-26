@@ -1,0 +1,7 @@
+node_modules
+scripts/node_modules
+scripts/.env
+scripts/.secret
+contracts/artifacts
+build/
+.DS_Store
