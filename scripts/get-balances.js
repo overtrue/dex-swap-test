@@ -18,6 +18,11 @@ const token0 = new Contract(token0Address, token0Contract.abi, singer)
 const token1 = new Contract(token1Address, token1Contract.abi, singer)
 const pair = new Contract(pairAddress, pairAbi, singer)
 
+console.log('Token supplies:')
+
+console.log('token0 supply:', Number(formatUnits(await token0.totalSupply(), 18)))
+console.log('token1 supply:', Number(formatUnits(await token1.totalSupply(), 18)))
+
 console.log('Token balances:')
 
 const balance0 = await token0.balanceOf(singer.address)
